@@ -356,6 +356,10 @@ const people = [
 
 const table = document.querySelector('.dashboard');
 
+if (table === null) {
+  return;
+}
+
 for (const person of people) {
   const row = document.createElement('tr');
 
